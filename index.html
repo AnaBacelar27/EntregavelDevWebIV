@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays, DOM e Eventos – Semana 04</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 640px;
+      margin: 40px auto;
+      padding: 0 16px;
+      color: #222;
+    }
+    li {
+      cursor: pointer;
+      padding: 4px 0;
+    }
+    .destaque {
+      color: #b45309;
+      font-weight: bold;
+    }
+    .feito {
+      text-decoration: line-through;
+      color: #888;
+    }
+    input, button {
+      font: inherit;
+      padding: 6px 10px;
+    }
+    section {
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="titulo">Meu Blog</h1>
+
+  <p class="texto">Este é o primeiro parágrafo do blog.</p>
+  <p class="texto">Aqui estudamos Arrays, DOM e Eventos em JavaScript.</p>
+  <p class="texto">Abra o Console  para acompanhar.</p>
+
+  <section>
+    <h2>Lista</h2>
+    <p><small>Clique em um item para marcar/desmarcar como feito.</small></p>
+    <ul id="lista">
+      <li>Item do HTML 1</li>
+      <li>Item do HTML 2</li>
+      <li>Item do HTML 3</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Nova tarefa</h2>
+    <form id="formulario">
+      <input type="text" id="tarefa" placeholder="Digite uma tarefa">
+      <button type="submit">Adicionar</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Interações</h2>
+    <p><input type="text" id="nome" placeholder="Digite seu nome"></p>
+    <button id="botao">Clique aqui</button>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
