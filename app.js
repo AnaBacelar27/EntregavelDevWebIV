@@ -1,12 +1,12 @@
 
-const meuNome = "Seu Nome";
+const meuNome = "Bia Bac";
 
 
 console.log("========== BLOCO 1 – Arrays e Métodos ==========");
 
 
 console.log("\n--- 1.1 nomes (forEach e map) ---");
-const nomes = ["Ana", "Bruno", "Carla"];
+const nomes = ["Benoni", "Sarah", "Roberta"];
 
 
 nomes.forEach((nome) => {
@@ -47,7 +47,7 @@ const produtosBaratos = produtos.filter((produto) => produto.preco < 50);
 console.log("Produtos com preço menor que 50:", produtosBaratos);
 
 const totalProdutos = produtos.reduce((total, produto) => total + produto.preco, 0);
-console.log(`Soma de todos os preços: R$ ${totalProdutos}`); // R$ 243
+console.log(`Soma de todos os preços: R$ ${totalProdutos}`); 
 
 produtos.forEach((produto) => {
   console.log(`${produto.nome}: R$ ${produto.preco}`);
@@ -58,7 +58,7 @@ console.log("\n========== BLOCO 2 – Manipulação do DOM ==========");
 
 console.log("\n--- 2.1 Título ---");
 const titulo = document.querySelector("#titulo");
-titulo.textContent = `Blog do ${meuNome}`;
+titulo.textContent = `Blog da ${meuNome}`;
 console.log("Novo título:", titulo.textContent);
 
 
